@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Tanarok">
+  <DataContextMoniker Name="/TanarokDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a665b4ed-2c5a-466f-a423-8775292e4001" absoluteBounds="1.5, 1.125, 2, 2.5401025390625">
+      <DataClassMoniker Name="/TanarokDataContext/Tanarok" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f034a159-0490-4059-9a0a-07e94133a1aa" absoluteBounds="1.5150000000000001, 1.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

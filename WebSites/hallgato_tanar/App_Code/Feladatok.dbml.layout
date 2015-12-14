@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Feladatok">
+  <DataContextMoniker Name="/FeladatokDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a873a038-ef47-4fc0-9f37-f267ea0ae9c9" absoluteBounds="2.25, 1.25, 2, 2.5401025390625">
+      <DataClassMoniker Name="/FeladatokDataContext/Feladatok" />
+      <nestedChildShapes>
+        <elementListCompartment Id="da108638-8063-4e51-beac-c0c504e234fd" absoluteBounds="2.265, 1.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

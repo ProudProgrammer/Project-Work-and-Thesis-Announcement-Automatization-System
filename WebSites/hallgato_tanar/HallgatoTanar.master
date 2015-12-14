@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HallgatoTanar.master.cs" Inherits="HallgatoTanar" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+		<div>
+	
+			<!-- Az egész oldalt tartalmazó konténer -->
+			<div id="container">
+				<!-- Felső rész -->
+				<div id="top">
+					<!-- Logo -->
+					<div id="logo">
+						<h1><span id="logo1">Hallgató-Tanár<br />Komplex-Szakdolgozat<br />Automatizáló</span></h1>
+					</div>
+					<!-- Menüsor -->
+					<div id="menu">
+                        <ul>
+                            <asp:LoginView ID="LoginView1" runat="server">
+                                <RoleGroups>
+                                    <asp:RoleGroup Roles="tanar">
+                                        <ContentTemplate>
+                                            <li><asp:HyperLink ID="HyperLink_main" NavigateUrl="~/Feladatok_Lista.aspx" runat="server">Feladatok</asp:HyperLink></li>
+                                            <li><asp:HyperLink ID="HyperLink1" NavigateUrl="~/Feladat_Uj.aspx" runat="server">Új feladat</asp:HyperLink></li>
+                                            <li><asp:HyperLink ID="HyperLink_profil" NavigateUrl="~/Profil_Tanar.aspx" runat="server">Profilom</asp:HyperLink></li>
+                                            <li><asp:LoginStatus ID="LoginStatus_logout" LogoutPageUrl="~/Default.aspx" LogoutText="Kijelentkezés" runat="server" LogoutAction="Redirect" /></li>
+                                        </ContentTemplate>
+                                    </asp:RoleGroup>
+                                </RoleGroups>
+                                <AnonymousTemplate>
+                                    <li><asp:HyperLink ID="HyperLink_reg" NavigateUrl="~/Registration.aspx" runat="server">Regisztráció</asp:HyperLink></li>
+                                    <li><asp:LoginStatus ID="LoginStatus_login" LoginText="Belépés" runat="server" /></li>
+                                </AnonymousTemplate>
+                                <LoggedInTemplate>
+                                    <li><asp:HyperLink ID="HyperLink_main" NavigateUrl="~/Feladatok_Lista.aspx" runat="server">Feladatok</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink1" NavigateUrl="~/Feladat_Uj.aspx" runat="server">Új feladat</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink_profil" NavigateUrl="~/Profil_Hallgato.aspx" runat="server">Profilom</asp:HyperLink></li>
+                                    <li><asp:LoginStatus ID="LoginStatus_logout" LogoutPageUrl="~/Default.aspx" LogoutText="Kijelentkezés" runat="server" LogoutAction="Redirect" /></li>
+                                </LoggedInTemplate>
+                            </asp:LoginView>
+                        </ul>
+				    </div> 
+				</div>
+				<!-- Középső rész -->
+				<div id="middle">
+					<!-- Középső rész bal oldali sávja -->
+					<div id="leftside">
+						<h2>Hallgató-Tanár Komplex-Szakdolgozat Automatizáló</h2>
+                        <asp:LoginView ID="LoginView2" runat="server">
+                            <RoleGroups>
+                                <asp:RoleGroup Roles="tanar">
+                                    <ContentTemplate>
+                                        <p>Üdvözlet
+                                        <asp:LoginName ID="LoginName2" runat="server" />
+                                        tanár
+                                        </p>
+                                    </ContentTemplate>
+                                </asp:RoleGroup>
+                            </RoleGroups>
+                            <AnonymousTemplate>
+                                <p>Kedves látogató, ha használni akarod a rendszert akkor jelentkezz be.
+                                </p>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                <p>Üdvözlet
+                                <asp:LoginName ID="LoginName1" runat="server" />
+                                hallgató
+                                </p>
+                                <p>
+                                A tárgyat jegyző tanár<br />Név:
+                                    <asp:Label ID="Label_Tanar_Neve" runat="server"></asp:Label><br />
+                                Rövid leírás:
+                                    <asp:Label ID="Label_Rovid_Leiras" runat="server"></asp:Label><br />
+                                    <asp:HyperLink ID="HyperLink_Adatlap_Tanar" runat="server" NavigateUrl="~/Adatlap_Tanar.aspx">Tanár adatlapja</asp:HyperLink>
+                                </p>
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+					</div>
+					<!-- Középső rész jobb oldali sávja -->
+					<div id="rightside">
+						 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+					</div>
+				</div>
+				<!-- Alsó rész -->
+				<div id="bottom">
+					<p>Gábor Balázs, Miskolci Egyetem, 2012</p>
+				</div>
+			</div>
+			
+		</div>
+    </form>
+</body>
+</html>

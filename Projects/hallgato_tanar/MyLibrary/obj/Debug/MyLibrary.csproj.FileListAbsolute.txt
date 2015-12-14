@@ -1,0 +1,5 @@
+C:\Users\Balázs\Documents\Visual Studio 2010\Projects\hallgato_tanar\MyLibrary\bin\Debug\MyLibrary.dll
+C:\Users\Balázs\Documents\Visual Studio 2010\Projects\hallgato_tanar\MyLibrary\bin\Debug\MyLibrary.pdb
+C:\Users\Balázs\Documents\Visual Studio 2010\Projects\hallgato_tanar\MyLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Balázs\Documents\Visual Studio 2010\Projects\hallgato_tanar\MyLibrary\obj\Debug\MyLibrary.dll
+C:\Users\Balázs\Documents\Visual Studio 2010\Projects\hallgato_tanar\MyLibrary\obj\Debug\MyLibrary.pdb

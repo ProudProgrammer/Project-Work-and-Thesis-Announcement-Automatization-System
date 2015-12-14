@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ASPNETDB" Class="TanarokDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\ASPNETDB.MDF;Integrated Security=True;User Instance=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ASPNETDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Tanarok" Member="Tanaroks">
+    <Type Name="Tanarok">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nev" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Rovid_leiras" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Konzultacios_ido" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Telefon" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Szoba" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Informacios_oldal" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Ertesites" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
